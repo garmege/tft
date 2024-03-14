@@ -27,9 +27,12 @@ body { line-height:1; font-size:13px; background-color:#1e1d32;}
 .join_btn:hover {border: 2px solid #fff; background-color:#fff; color:#7c69e3;}
 /*오른쪽 사이드바 영역*/
 .side_bar {position:fixed; top:50%; right:7%; transform:translateY(-50%); z-index: 99;}
-.side_bar > li {margin-bottom:15px; border-radius: 50%; transition: all 0.5s;}
+.side_bar > li {margin-bottom:15px; border-radius: 50%; transition: all 0.5s; width:40px; height: 40px; background-color: #37d0d8; display: flex; align-items: center; justify-content: center; cursor: pointer;}
+.side_bar > li img {
+    width: 20px;
+}
 /*사이드바 호버*/
-.side_bar > li:hover {box-shadow: 0 0 20px 5px #37d0d8;}
+.side_bar > li:hover {box-shadow: 0 0 10px 2px #37d0d8;}
 /*동영상 영역*/
 .visual_box {height:100vh; position:relative; overflow: hidden;}
 .visual_box video {position:absolute; min-width: 100%; min-height: 100%;}
