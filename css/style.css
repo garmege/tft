@@ -67,20 +67,20 @@ body { line-height:1; font-size:13px; background-color:#1e1d32;}
 .comment_wrap .list {width: 554px; background-color:#181728; border-radius: 10px;
                      position:relative; float: left; text-align: center; margin:0 23px;}
 .comment_wrap .list .imgbox {position:absolute; top:-16%; left:50%; transform:translateX(-50%);
-                             width: 122px;}
-.comment_wrap .list .imgbox img {width: 100%;}
+                             width: 120px; height: 120px; border-radius: 50%; overflow: hidden;}
+.comment_wrap .list .imgbox img {object-fit: cover; width: 100%; height: 100%;}
 .comment_wrap .list .name {margin:104px 0 12px; color:#fff; font-size: 20px; font-weight: bold;}
 .comment_wrap .list .position {color:#37d0d8; margin-bottom:52px; font-weight: bold;}
 .comment_wrap .list .text {font-size: 18px; color:#c2d4f8; font-style: italic; line-height:28px;
                            margin-bottom:74px;}
-.back_img {position:absolute; top:0; right:10px; width:110px;}
+.back_img {position:absolute; top:0; right:10px; width:110px; height: 110px;}
 .back_img img {width: 100%; opacity: 0.5;}
 /*푸터 영역*/
 #footer {background-image: url(../img/footer-bg.jpg); background-size: cover; width:100%;
          background-repeat: no-repeat;}
 #footer .f_top {width:1200px; margin:0 auto; padding-bottom:115px; border-bottom:1px solid #c2d4f8;}
 .f_left {float: left;}
-.f_left img {margin:140px 0 0 46px; width: 254px;}
+.f_left img {margin:140px 0 0 46px;}
 .f_right {float: right; margin-right:60px;}
 .f_right .f_menu {margin:146px 0 70px; position:relative; right:-35px;}
 .f_right .f_menu li {float: left;}
