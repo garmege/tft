@@ -1,0 +1,104 @@
+/*reset css*/
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+img,video { vertical-align:top;}
+table { border-collapse:collapse;}
+body { line-height:1; font-size:13px; background-color:#1e1d32;}
+.clear_fix:after { content:""; display:block; clear:both;}
+
+
+/*모든페이지 공통으로 들어가는 헤더 영역 풋터 영역*/
+#header {position: fixed; top:0; left:0; background-color: rgba(0,0,0,0.7);
+         width: 100%; transition: all 0.5s; z-index:999;}
+#header .center {width: 1200px; margin:0 auto; display: flex; justify-content: space-between;
+    align-items: center; height: 120px;}
+#header .center .logo {width: 184px;}
+#header .center .logo img {width: 100%;}
+#header .center .gnb {display: flex; justify-content: space-between;}
+#header .center .gnb > li a {color:#fff; font-size:14px; margin:0 20px;
+                             font-weight:bold; transition: all 0.5s;}
+.join_btn {display:block; width:196px; border:2px solid #7c69e3;
+           border-radius:6px; background-color: transparent; line-height:46px; text-align: center;
+           color:#fff; font-size:15px; font-weight: bold; transition: all 0.5s;}
+/*헤더 호버 효과*/
+#header:hover {background-color:rgba(185, 185, 185, 0.5);}
+#header .center .gnb > li:hover a {color:#3dd0d8;}
+.join_btn:hover {border: 2px solid #fff; background-color:#fff; color:#7c69e3;}
+/*오른쪽 사이드바 영역*/
+.side_bar {position:fixed; top:50%; right:7%; transform:translateY(-50%); z-index: 99;}
+.side_bar > li {margin-bottom:15px; border-radius: 50%; transition: all 0.5s;}
+/*사이드바 호버*/
+.side_bar > li:hover {box-shadow: 0 0 20px 5px #37d0d8;}
+/*동영상 영역*/
+.visual_box {height:100vh; position:relative; overflow: hidden;}
+.visual_box video {position:absolute; min-width: 100%; min-height: 100%;}
+.visual_text_box {position:absolute; top:50%; left: 50%; transform:translate(-50%,-50%); text-align: center;}
+.visual_text_box .small_title {font-size: 40px; color:#fff; font-weight: bold; margin-bottom:14px;}
+.visual_text_box .big_title {font-size:80px; color:#fff; font-weight: bold; margin-bottom:54px;
+                             line-height:90px;}
+.visual_text_box .sub_text {font-size: 14px; color:#fff; line-height:20px; margin-bottom:54px;}
+.upcoming_btn {display:inline-block; width:224px; color:#3dd0d8; font-size:14px; line-height:60px;
+               background-color: #fff; border-radius: 10px; font-weight: bold; transition: all 0.5s;}
+.upcoming_btn:hover {box-shadow: 0 0 20px 10px #37d0d8;}
+/*메인페이지 중간영역*/
+.upcoming_games .center {width:1200px; margin:0 auto;}
+.cont_title {font-size:36px; font-weight: bold; color:#fff; text-align: center;
+             margin:160px 0 104px;}
+.upcoming_box {width: 1170px; margin:0 auto; background-color: #292845; border-radius: 12px;
+               padding:94px 40px;}
+.upcoming_box .left {float: left;}
+.upcoming_box .left .mini_title {font-weight: bold; color:#37d0d8; margin-bottom:12px;}
+.upcoming_box .left h3 {color:#fff; font-size: 28px; margin-bottom:62px;}
+.upcoming_box .left .context {font-size: 16px; color:#c2d4f8; line-height:24px;}
+.upcoming_box .left .space {margin-bottom:32px;}
+.upcoming_box .left .readmore_btn {background: linear-gradient(90deg, rgba(61,206,215,1) 0%, rgba(94,83,171,1) 100%);
+                                   width:198px; display: inline-block; line-height:60px; text-align: center; color:#fff;
+                                   font-weight: bold; font-size: 16px; border-radius: 10px; margin-top:65px;}
+.upcoming_box .right {float: right;}
+.upcoming_box .right .imgbox {width:520px; overflow: hidden; border-radius: 10px; margin-top:30px;}
+/*테스터 코멘트 영역*/
+.testimonials .center {width: 1200px; margin:0 auto;}
+.testimonials .center .cont_title {margin-bottom:174px;}
+.comment_wrap {margin-bottom:184px;}
+.comment_wrap .list {width: 554px; background-color:#181728; border-radius: 10px;
+                     position:relative; float: left; text-align: center; margin:0 23px;}
+.comment_wrap .list .imgbox {position:absolute; top:-16%; left:50%; transform:translateX(-50%);
+                             width: 122px;}
+.comment_wrap .list .imgbox img {width: 100%;}
+.comment_wrap .list .name {margin:104px 0 12px; color:#fff; font-size: 20px; font-weight: bold;}
+.comment_wrap .list .position {color:#37d0d8; margin-bottom:52px; font-weight: bold;}
+.comment_wrap .list .text {font-size: 18px; color:#c2d4f8; font-style: italic; line-height:28px;
+                           margin-bottom:74px;}
+.back_img {position:absolute; top:0; right:10px; width:110px;}
+.back_img img {width: 100%; opacity: 0.5;}
+/*푸터 영역*/
+#footer {background-image: url(../img/footer-bg.jpg); background-size: cover; width:100%;
+         background-repeat: no-repeat;}
+#footer .f_top {width:1200px; margin:0 auto; padding-bottom:115px; border-bottom:1px solid #c2d4f8;}
+.f_left {float: left;}
+.f_left img {margin:140px 0 0 46px; width: 254px;}
+.f_right {float: right; margin-right:60px;}
+.f_right .f_menu {margin:146px 0 70px; position:relative; right:-35px;}
+.f_right .f_menu li {float: left;}
+.f_right .f_menu li a {color:#fff; font-size: 14px; font-weight: bold; margin-left:24px;}
+.f_text p {color:#c2d4f8; line-height: 22px; font-size: 14px; text-align: right;}
+.f_bot {width:1200px; margin:0 auto; color:#c2d4f8;}
+.f_bot .left {float: left; margin:32px 0 34px 30px;}
+.f_bot .right {float: right; margin:32px 30px 34px 0;}
+/*푸터 호버*/
+.f_right .f_menu li:hover a {color:#37d0d8;}
+/*서브페이지 중간영역*/
+.blog_title {background-image: url(../img/blog_bg.jpg); background-size: cover; background-repeat: no-repeat;}
+.blog_title h3 {font-size:40px; color:#fff; text-align: center; line-height:488px;
+                position:relative; top:55px;}
+table {width:1110px; margin:0 auto 210px;}
+table td {padding-left:22px; color:#c2d4f8; line-height:100px;}
+.tbl_header th {color:#fff; font-weight: bold; padding-left:22px;
+                text-align: left; line-height: 62px; border:1px solid #292845;}
+.tbl_header .name {width:316px;}
+.tbl_header .position {width:430px;}
+.tbl_header .age {width:124px;}
+.tbl_cont {border-bottom:1px solid #1e1d32; background-color: #292845;}
+.tbl_cont td {border-right:1px solid #292845;}
+.tbl_cont td:nth-child(4) {border:none;}
